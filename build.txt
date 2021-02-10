@@ -1,0 +1,9 @@
+displayName = [i/p57:520] [c/fec2ff:Awakening Minerals] [i/p57:520]
+author = AstralShiro
+version = 0.4
+homepage = https://awakeningminerals.fandom.com/wiki/Awakening_Minerals_Wiki
+hideCode = false
+hideResources = false
+includeSource = true
+buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*
+includePDB = true

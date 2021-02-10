@@ -1,0 +1,2 @@
+# AwakeningMinerals
+ Terraria Mod
