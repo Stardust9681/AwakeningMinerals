@@ -35,7 +35,7 @@ namespace AwakeningMinerals.Items.Ice.Accessories
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ModContent.ItemType<Items.Ice.Stone.IceStone>(), 1);
+			recipe.AddIngredient(ModContent.ItemType<Items.Ice.Stone.IceStone>(), 5);
 			recipe.AddIngredient(ItemID.FallenStar, 1);
 			recipe.AddTile(TileID.WorkBenches);
 			recipe.SetResult(this);

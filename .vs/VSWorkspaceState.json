@@ -1,10 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Items\\Light\\Accessories",
-    "\\NPCs",
-    "\\NPCs\\Bosses"
+    "\\Items",
+    "\\Items\\Air",
+    "\\Items\\Air\\Accessories",
+    "\\Items\\Ancestral",
+    "\\Items\\Ancestral\\Astral"
   ],
-  "SelectedNode": "\\AwakeningMinerals.cs",
+  "SelectedNode": "\\Items\\IceHeartCrystal.cs",
   "PreviewInSolutionExplorer": false
 }

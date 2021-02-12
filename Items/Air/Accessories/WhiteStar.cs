@@ -35,7 +35,7 @@ namespace AwakeningMinerals.Items.Air.Accessories
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ModContent.ItemType<Items.Air.Stone.AirStone>(), 1);
+			recipe.AddIngredient(ModContent.ItemType<Items.Air.Stone.AirStone>(), 5);
 			recipe.AddIngredient(ItemID.FallenStar, 1);
 			recipe.AddTile(TileID.WorkBenches);
 			recipe.SetResult(this);

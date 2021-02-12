@@ -35,7 +35,7 @@ namespace AwakeningMinerals.Items.Thunder.Accessories
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ModContent.ItemType<Items.Thunder.Stone.ThunderStone>(), 1);
+			recipe.AddIngredient(ModContent.ItemType<Items.Thunder.Stone.ThunderStone>(), 5);
 			recipe.AddIngredient(ItemID.FallenStar, 1);
 			recipe.AddTile(TileID.WorkBenches);
 			recipe.SetResult(this);

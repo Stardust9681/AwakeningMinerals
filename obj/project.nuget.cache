@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "n0wqoKrzvTWY5Sq1ZSsqwpY6XfDxoUv9Cdr2eiEJ5WPw88n4Ihprcl7E9M3LvJz9DotngAqHqkbnsHKvbSaI3g==",
+  "success": true,
+  "projectFilePath": "c:\\Users\\Shiro\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\AwakeningMinerals\\AwakeningMinerals.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Shiro\\.nuget\\packages\\tmodloader.codeassist\\0.1.1\\tmodloader.codeassist.0.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}

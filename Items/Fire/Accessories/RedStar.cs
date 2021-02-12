@@ -35,7 +35,7 @@ namespace AwakeningMinerals.Items.Fire.Accessories
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ModContent.ItemType<Items.Fire.Stone.FireStone>(), 1);
+			recipe.AddIngredient(ModContent.ItemType<Items.Fire.Stone.FireStone>(), 5);
 			recipe.AddIngredient(ItemID.FallenStar, 1);
 			recipe.AddTile(TileID.WorkBenches);
 			recipe.SetResult(this);

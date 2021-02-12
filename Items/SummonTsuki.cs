@@ -3,7 +3,6 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.DataStructures;
 using Microsoft.Xna.Framework;
-using Terraria.DataStructures;
 
 namespace AwakeningMinerals.Items
 {
@@ -30,9 +29,9 @@ namespace AwakeningMinerals.Items
         public override bool CanUseItem(Player player)
         {
             return player.ZoneOverworldHeight && !Main.dayTime && !NPC.AnyNPCs(mod.NPCType("TsukiBoss"));
-            {
-                return !Main.dayTime && !NPC.AnyNPCs(mod.NPCType("TsukiBoss"));
-            }
+            //{
+                //return !Main.dayTime && !NPC.AnyNPCs(mod.NPCType("TsukiBoss"));
+            //}
         }
 
         public override bool UseItem(Player player)
