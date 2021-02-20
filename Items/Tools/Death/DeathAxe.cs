@@ -31,6 +31,7 @@ namespace AwakeningMinerals.Items.Tools.Death
             item.melee = true;
             item.damage = 20;
             item.knockBack = 5.0f;
+            item.crit = 5;
 
             item.axe = 11;
         }

@@ -27,6 +27,7 @@ namespace AwakeningMinerals.Items.Tools.Air
 			item.rare = ItemRarityID.White;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
+           	item.crit = 5;
 			
 			item.axe = 10;
         }

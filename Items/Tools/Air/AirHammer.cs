@@ -30,6 +30,7 @@ namespace AwakeningMinerals.Items.Tools.Air
             item.melee = true;
             item.damage = 15;
             item.knockBack = 6.0f;
+   			item.crit = 5;
 
             item.hammer = 50;
         }
