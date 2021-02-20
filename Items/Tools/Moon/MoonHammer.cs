@@ -30,6 +30,7 @@ namespace AwakeningMinerals.Items.Tools.Moon
             item.melee = true;
             item.damage = 60;
             item.knockBack = 6.0f;
+            item.crit = 5;
 
             item.hammer = 115;
         }

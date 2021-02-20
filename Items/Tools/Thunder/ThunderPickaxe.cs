@@ -27,6 +27,7 @@ namespace AwakeningMinerals.Items.Tools.Thunder
 			item.rare = ItemRarityID.Yellow;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
+			item.crit = 5;
 			
 			item.pick = 80;
 		}

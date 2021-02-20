@@ -30,6 +30,7 @@ namespace AwakeningMinerals.Items.Tools.Earth
             item.melee = true;
             item.damage = 25;
             item.knockBack = 6.0f;
+            item.crit = 5;
 
             item.hammer = 60;
         }

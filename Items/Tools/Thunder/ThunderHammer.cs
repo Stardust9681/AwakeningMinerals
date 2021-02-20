@@ -30,6 +30,7 @@ namespace AwakeningMinerals.Items.Tools.Thunder
             item.melee = true;
             item.damage = 50;
             item.knockBack = 6.0f;
+            item.crit = 5;
 
             item.hammer = 80;
         }

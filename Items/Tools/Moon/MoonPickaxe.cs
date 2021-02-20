@@ -27,6 +27,7 @@ namespace AwakeningMinerals.Items.Tools.Moon
 			item.rare = ItemRarityID.LightPurple;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
+			item.crit = 5;
 			
 			item.pick = 115;
 		}

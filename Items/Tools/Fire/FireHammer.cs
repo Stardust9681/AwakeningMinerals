@@ -30,6 +30,7 @@ namespace AwakeningMinerals.Items.Tools.Fire
             item.melee = true;
             item.damage = 30;
             item.knockBack = 6.0f;
+            item.crit = 5;
 
             item.hammer = 65;
         }

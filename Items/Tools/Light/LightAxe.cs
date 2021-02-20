@@ -31,6 +31,7 @@ namespace AwakeningMinerals.Items.Tools.Light
             item.melee = true;
             item.damage = 45;
             item.knockBack = 5.0f;
+            item.crit = 5;
 
             item.axe = 15;
         }

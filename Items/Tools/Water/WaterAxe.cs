@@ -31,6 +31,7 @@ namespace AwakeningMinerals.Items.Tools.Water
             item.melee = true;
             item.damage = 55;
             item.knockBack = 5.0f;
+            item.crit = 5;
 
             item.axe = 17;
         }

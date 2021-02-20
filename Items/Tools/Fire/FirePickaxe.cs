@@ -27,7 +27,8 @@ namespace AwakeningMinerals.Items.Tools.Fire
 			item.rare = ItemRarityID.Red;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
-			
+			item.crit = 5;
+
 			item.pick = 65;
 		}
 

@@ -30,6 +30,7 @@ namespace AwakeningMinerals.Items.Tools.Ice
             item.melee = true;
             item.damage = 40;
             item.knockBack = 6.0f;
+            item.crit = 5;
 
             item.hammer = 70;
         }

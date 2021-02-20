@@ -27,6 +27,7 @@ namespace AwakeningMinerals.Items.Tools.Ice
 			item.rare = ItemRarityID.Blue;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
+			item.crit = 5;
 			
 			item.pick = 70;
 		}
