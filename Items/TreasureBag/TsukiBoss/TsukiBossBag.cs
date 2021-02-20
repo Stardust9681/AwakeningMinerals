@@ -30,7 +30,6 @@ namespace AwakeningMinerals.Items.TreasureBag.TsukiBoss
 
 
         }
-
         public override bool CanRightClick()
         {
             return true;
@@ -39,14 +38,28 @@ namespace AwakeningMinerals.Items.TreasureBag.TsukiBoss
         public override void OpenBossBag(Player player)
         {
             player.TryGettingDevArmor();
-            if (Main.rand.NextBool(1))
+            int choice = Main.rand.Next(5);
+            if (choice == 0)
+            {
+                player.QuickSpawnItem(ModContent.ItemType<Items.TsukiBossMask>());
+            }
+            if (choice == 1)
             {
                 player.QuickSpawnItem(ModContent.ItemType<Items.TsukiBossBody>());
-                player.QuickSpawnItem(ModContent.ItemType<Items.TsukiBossLegs>());
-                player.QuickSpawnItem(ModContent.ItemType<Items.TsukiBossMask>());
-
-                player.QuickSpawnItem(mod.ItemType("Crystal"), Main.rand.Next(1, 10));
             }
+            if (choice == 2)
+            {
+                player.QuickSpawnItem(ModContent.ItemType<Items.TsukiBossLegs>());
+            }
+            if (choice == 3)
+            {
+                player.QuickSpawnItem(mod.ItemType("Crystal"), Main.rand.Next(1,5));
+            }
+            if (choice == 4)
+            {
+                player.QuickSpawnItem(mod.ItemType("TsukiWings"));
+            }
+
         }
 
         public override int BossBagNPC => ModContent.NPCType<NPCs.Bosses.TsukiBoss>();

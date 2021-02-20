@@ -1,25 +1,31 @@
 [i/p57:520][c/fec2ff:Awakening Minerals] [i/p57:520]
-[c/c2feff:v0.6]
+[c/c2feff:v0.8]
 
 The [c/b94bee:Awakening Minerals] is a simply mod for improve gaming experience.
 This mod add : Accessories, Weapons, Armor, Bosses and more, and is total grinding.
 Don't have world generation about various biome or minerals or items it will be only craft.
 
 If u want know more enter in our server Discord.
-- - -
 
+- - -
 [c/7b52c3:Update]:
 
-Added mod icon
-
-[c/7b52c3:New]:
-Accessories : Astral necklace - Cosmic necklace - Moon necklace - Sun necklace.
-Boss : Tsuki, The moon light (Tsuki mask, Tsuki body, Tsuki legs, Tsuki wings).
+Removed Event - 1k Downloads.
 
 - - -
+[c/7b52c3:New]:
 
+Weapons : Tsuki's weapons (Sword, Spear, Bow, Staff).
+NPC : Nyana.
+Tools : Pickaxe, Axe and Hammer (Ice, Fire, Earth, Death, Air, Water, Light, Thunder).
+Pet : Elemental Butterflies (+2 Dev Butterflies).
+Accessories : Tsuki's Wings.
+
+- - -
 [c/7b52c3:Fix]:
 
-- - -
+Golden Statue Downloads : Fixed regen.
+Tsuki, The moon light : Fixed damage.
+Yellow Star T2 : Replace from Spelunker to 15%+ Mining Speed.
 
 Star Team.

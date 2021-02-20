@@ -25,7 +25,7 @@ namespace AwakeningMinerals.Items.Wings
 		}
 		public override void UpdateAccessory(Player player, bool hideVisual)
 		{
-			player.wingTimeMax = 150;
+			player.wingTimeMax = 90;
 		}
 
 		public override void VerticalWingSpeeds(Player player, ref float ascentWhenFalling, ref float ascentWhenRising,
@@ -34,7 +34,7 @@ namespace AwakeningMinerals.Items.Wings
 			ascentWhenFalling = 0.85f;
 			ascentWhenRising = 0.15f;
 			maxCanAscendMultiplier = 1f;
-			maxAscentMultiplier = 3f;
+			maxAscentMultiplier = 150f;
 			constantAscend = 0.135f;
 		}
 

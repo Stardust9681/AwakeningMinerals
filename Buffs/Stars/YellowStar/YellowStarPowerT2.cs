@@ -9,15 +9,14 @@ namespace AwakeningMinerals.Buffs.Stars.YellowStar
         public override void SetDefaults()
         {
             DisplayName.SetDefault("Yellow Power - Tier 2");
-            Description.SetDefault("Pick Speed = +10%\nSpelunker");
+            Description.SetDefault("Pick Speed = +15");
             Main.buffNoTimeDisplay[Type] = true;
         }
 
         public override void Update(Player player, ref int buffIndex)
         {
             //player.buffTime[buffIndex] = 1;
-            player.pickSpeed = 0.10f;
-            player.findTreasure = true;
+            player.pickSpeed = 0.15f;
 
             player.DelBuff(buffIndex);
             buffIndex--;

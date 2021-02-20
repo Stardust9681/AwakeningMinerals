@@ -10,6 +10,10 @@ using Terraria.ModLoader;
 using Terraria.ObjectData;
 using Terraria.World.Generation;
 using static Terraria.ModLoader.ModContent;
+using AwakeningMinerals.Items;
+using Microsoft.Xna.Framework.Graphics;
+using Terraria.Enums;
+using Terraria.Localization;
 
 namespace AwakeningMinerals.Tiles.SpecialItems
 {
@@ -19,6 +23,7 @@ namespace AwakeningMinerals.Tiles.SpecialItems
 		{
 			Main.tileFrameImportant[Type] = true;
 			Main.tileObsidianKill[Type] = true;
+			Main.tileLighted[Type] = true;
 
 			TileObjectData.newTile.CopyFrom(TileObjectData.Style2xX);
 			TileObjectData.addTile(Type);

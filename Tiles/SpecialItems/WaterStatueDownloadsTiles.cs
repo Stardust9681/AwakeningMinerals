@@ -10,6 +10,10 @@ using Terraria.ModLoader;
 using Terraria.ObjectData;
 using Terraria.World.Generation;
 using static Terraria.ModLoader.ModContent;
+using AwakeningMinerals.Items;
+using Microsoft.Xna.Framework.Graphics;
+using Terraria.Enums;
+using Terraria.Localization;
 
 namespace AwakeningMinerals.Tiles.SpecialItems
 {
@@ -19,6 +23,8 @@ namespace AwakeningMinerals.Tiles.SpecialItems
 		{
 			Main.tileFrameImportant[Type] = true;
 			Main.tileObsidianKill[Type] = true;
+			Main.tileLighted[Type] = true;
+			Main.tileLighted[Type] = true;
 
 			TileObjectData.newTile.CopyFrom(TileObjectData.Style2xX);
 			TileObjectData.addTile(Type);
@@ -34,9 +40,11 @@ namespace AwakeningMinerals.Tiles.SpecialItems
 			Item.NewItem(i * 16, j * 16, 32, 48, ModContent.ItemType<Items.SpecialItems.WaterStatueDownloads>());
 		}
 
-				public override void ModifyLight(int i, int j, ref float r, ref float g, ref float b) {
+		public override void ModifyLight(int i, int j, ref float r, ref float g, ref float b)
+		{
 			Tile tile = Main.tile[i, j];
-			if (tile.frameX == 0) {
+			if (tile.frameX == 0) 
+			{
 				// We can support different light colors for different styles here: switch (tile.frameY / 54)
 				r = 0.45f;
 				g = 0.95f;

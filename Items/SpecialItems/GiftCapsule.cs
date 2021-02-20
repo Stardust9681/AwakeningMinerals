@@ -10,7 +10,7 @@ using AwakeningMinerals.Items;
 
 namespace AwakeningMinerals.Items.SpecialItems
 {
-    public class GiftCapusle : ModItem
+    public class GiftCapsule : ModItem
     {
         public override void SetStaticDefaults()
         {
@@ -22,8 +22,8 @@ namespace AwakeningMinerals.Items.SpecialItems
         {
             item.maxStack = 1;
             item.consumable = true;
-            item.width = 34;
-            item.height = 48;
+            item.width = 30;
+            item.height = 26;
             item.rare = -12;
         }
         public override bool CanRightClick()
@@ -33,7 +33,7 @@ namespace AwakeningMinerals.Items.SpecialItems
 
         public override void RightClick(Player player)
         {
-            int choice = Main.rand.Next(3);
+            int choice = Main.rand.Next(12);
             if (choice == 0)
             {
                 player.QuickSpawnItem(mod.ItemType("Crystal"), Main.rand.Next(1, 5));
@@ -78,23 +78,27 @@ namespace AwakeningMinerals.Items.SpecialItems
             {
                 player.QuickSpawnItem(mod.ItemType("waterStatueDownloads"));
             }
+            if (choice == 11)
+            {
+                player.QuickSpawnItem(mod.ItemType("GoldenStatueDownloads"));
+            }
         }
         		public override void AddRecipes()
 		{
-			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.IronOre, 10);
-			recipe.AddIngredient(ItemID.GoldCoin, 5);
-            recipe.AddIngredient(ItemID.Glass, 5);
-			recipe.AddTile(TileID.Loom);
-			recipe.SetResult(this);
-			recipe.AddRecipe();
-            recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.LeadOre, 10);
-			recipe.AddIngredient(ItemID.GoldCoin, 5);
-            recipe.AddIngredient(ItemID.Glass, 5);
-			recipe.AddTile(TileID.Loom);
-			recipe.SetResult(this);
-			recipe.AddRecipe();
+			//ModRecipe recipe = new ModRecipe(mod);
+			//recipe.AddIngredient(ItemID.IronOre, 10);
+			//recipe.AddIngredient(ItemID.GoldCoin, 5);
+            //recipe.AddIngredient(ItemID.Glass, 5);
+			//recipe.AddTile(TileID.Loom);
+			//recipe.SetResult(this);
+			//recipe.AddRecipe();
+            //recipe = new ModRecipe(mod);
+            //recipe.AddIngredient(ItemID.LeadOre, 10);
+			//recipe.AddIngredient(ItemID.GoldCoin, 5);
+            //recipe.AddIngredient(ItemID.Glass, 5);
+			//recipe.AddTile(TileID.Loom);
+			//recipe.SetResult(this);
+			//recipe.AddRecipe();
 		}
     }
 }

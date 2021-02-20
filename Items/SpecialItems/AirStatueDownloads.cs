@@ -17,7 +17,7 @@ namespace AwakeningMinerals.Items.SpecialItems
 			item.CloneDefaults(ItemID.ArmorStatue);
 			item.createTile = TileType<Tiles.SpecialItems.AirStatueDownloadsTiles>();
 			item.placeStyle = 0;
-			item.rare = ItemRarityID.White;
+            item.rare = -12;
 		}
 	}
 }

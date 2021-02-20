@@ -73,6 +73,29 @@ namespace AwakeningMinerals.NPCs.Bosses
                 npc.DropBossBags();
                 Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Crystal"), Main.rand.Next(1, 10));
             }
+            else
+            {
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Crystal"), Main.rand.Next(1, 5));
+
+                int choice = Main.rand.Next(2);
+                if (choice == 0)
+                {
+                    Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("TsukiSword"), 1);
+                }
+                if (choice == 1)
+                {
+                    Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("TsukiSpear"), 1);
+                }
+                //if (choice == 2)
+                //{
+                    //Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("TsukiStaff"), 1);
+                //}
+                //if (choice == 3)
+                //{
+                    //Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("TsukiBow"), 1);
+                //}
+            }
+
         }
 
         public override void ScaleExpertStats(int numPlayers, float bossLifeScale)
@@ -96,19 +119,20 @@ namespace AwakeningMinerals.NPCs.Bosses
             {
                 float Speed = 20f;  //projectile speed
                 Vector2 vector8 = new Vector2(npc.position.X + (npc.width / 2), npc.position.Y + (npc.height / 2));
-                int damage = 10;  //projectile damage
+                int damage = 20;  //projectile damage
                 int type = mod.ProjectileType("CrystalFragmentProj");  //put your projectile
                 Main.PlaySound(SoundID.Item28.SoundId, (int)npc.position.X, (int)npc.position.Y, SoundID.Item28.Style);
                 float rotation = (float)Math.Atan2(vector8.Y - (P.position.Y + (P.height * 0.5f)), vector8.X - (P.position.X + (P.width * 0.5f)));
                 int num54 = Projectile.NewProjectile(vector8.X, vector8.Y, (float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1), type, damage, 0f, 0);
                 npc.ai[1] = 0;
             }
+            npc.ai[1]++;
             //if (npc.ai[0] % 600 == 3)  //Npc spown rate
 
             //{
             //NPC.NewNPC((int)npc.position.X, (int)npc.position.Y, mod.NPCType("IceBossMinion"));  //NPC name
             //}
-            npc.ai[1] += 0;
+            //npc.ai[1] += 0;
             //if (npc.life <= 2750)  //when the boss has less than 70 health he will do the charge attack
             //    npc.ai[2]++;                //Charge Attack
             //if (npc.ai[2] >= 70)
@@ -165,7 +189,7 @@ namespace AwakeningMinerals.NPCs.Bosses
                     {
                         float Speed = 20f;  //projectile speed
                         Vector2 vector8 = new Vector2(npc.position.X + (npc.width / 2), npc.position.Y + (npc.height / 2));
-                        int damage = 10;  //projectile damage
+                        int damage = 30;  //projectile damage
                         int type = mod.ProjectileType("CrystalBallProj");  //put your projectile
                         Main.PlaySound(SoundID.Item28.SoundId, (int)npc.position.X, (int)npc.position.Y, SoundID.Item28.Style);
                         float rotation = (float)Math.Atan2(vector8.Y - (P.position.Y + (P.height * 0.5f)), vector8.X - (P.position.X + (P.width * 0.5f)));
@@ -182,7 +206,7 @@ namespace AwakeningMinerals.NPCs.Bosses
                         {
                             float Speed = 15f;  //projectile speed
                             Vector2 vector8 = new Vector2(npc.position.X + (npc.width / 2), npc.position.Y + (npc.height / 2));
-                            int damage = 10;  //projectile damage
+                            int damage = 30;  //projectile damage
                             int type = mod.ProjectileType("IceBossBlizzardBallProjectile");  //put your projectile
                             Main.PlaySound(SoundID.Item28.SoundId, (int)npc.position.X, (int)npc.position.Y, SoundID.Item28.Style);
                             float rotation = (float)Math.Atan2(vector8.Y - (P.position.Y + (P.height * 0.5f)), vector8.X - (P.position.X + (P.width * 0.5f)));
