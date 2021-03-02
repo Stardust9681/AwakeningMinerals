@@ -23,6 +23,7 @@ namespace AwakeningMinerals.Items.Pets
             item.shoot = mod.ProjectileType("MarshyButterflyProj");
             item.buffType = mod.BuffType("MarshyButterflyBuff");
             item.rare = ItemRarityID.Expert;
+            item.shopCustomPrice = Item.sellPrice(platinum: 1);
         }
 
         public override void UseStyle(Player player)

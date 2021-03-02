@@ -28,15 +28,14 @@ namespace AwakeningMinerals.Items.Air.Stone
             item.value = Item.sellPrice(silver: 75);
             item.maxStack = 999;
         }
-
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.StoneBlock, 10);
-            recipe.AddIngredient(ItemID.Cloud, 5);
-            recipe.AddTile(TileID.WorkBenches);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
+			recipe.AddIngredient(ModContent.ItemType<Items.ElementalFragments.Air.Aeramassinite>(), 5);
+			recipe.AddIngredient(ItemID.StoneBlock, 5);
+			recipe.AddTile(TileID.Anvils);
+			recipe.SetResult(5);
+			recipe.AddRecipe();
         }
     }
 }

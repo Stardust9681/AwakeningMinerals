@@ -20,9 +20,10 @@ namespace AwakeningMinerals
 {
 	public class AwakeningMineralsPlayer : ModPlayer
 	{
+
+		public bool ZoneSnow;
 		private const int saveVersion = 0;
 		public bool minionName = false;
-
 		public bool AirButterflyPet = false;
 		public bool DeathButterflyPet = false;
 		public bool EarthButterflyPet = false;
@@ -34,6 +35,8 @@ namespace AwakeningMinerals
 		public bool ThunderButterflyPet = false;
 		public bool WaterButterflyPet = false;
 		public bool AstralButterflyPet = false;
+
+		public bool MoonInvaderPet;
 
 		public static bool hasProjectile;
 
@@ -52,6 +55,8 @@ namespace AwakeningMinerals
 			ThunderButterflyPet = false;
 			WaterButterflyPet = false;
 			AstralButterflyPet = false;
+
+			MoonInvaderPet = false;
         }
 	}
 }

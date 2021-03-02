@@ -1,5 +1,5 @@
 [i/p57:520][c/fec2ff:Awakening Minerals] [i/p57:520]
-[c/c2feff:v0.8]
+[c/c2feff:v0.9]
 
 The [c/b94bee:Awakening Minerals] is a simply mod for improve gaming experience.
 This mod add : Accessories, Weapons, Armor, Bosses and more, and is total grinding.
@@ -7,25 +7,40 @@ Don't have world generation about various biome or minerals or items it will be 
 
 If u want know more enter in our server Discord.
 
+List stuff:
+
+Weapons : 4 Sword, 1 Spear, 3 Bow, 3 Magic
+Bosses : 1
+Town Npc : 2
+Accessories : 18 Stars, 4 Necklaces, 1 Wings
+Class : 4
+Pets : 11 Butterflies, 1 Invader
+Tools : 9 Pickaxes, 9 Axes, 8 Hammers
+
 - - -
 [c/7b52c3:Update]:
 
-Removed Event - 1k Downloads.
+- - -
 
 - - -
 [c/7b52c3:New]:
 
-Weapons : Tsuki's weapons (Sword, Spear, Bow, Staff).
-NPC : Nyana.
-Tools : Pickaxe, Axe and Hammer (Ice, Fire, Earth, Death, Air, Water, Light, Thunder).
-Pet : Elemental Butterflies (+2 Dev Butterflies).
-Accessories : Tsuki's Wings.
+8 Elemental Fragements (Fire, Ice, Air, Thunder, Light, Water, Earth, Death).
+2 Legendary Swords.
+2 Legendary Bows.
+2 Legendary Magics.
+4 Minerals (Vex Metal, Xony Metal, Iper Metal, Zeky Metal).
+1 Pickaxe/Axe.
+1 Pet.
+1 Npc (Marhsy).
+4 Classes.
 
 - - -
 [c/7b52c3:Fix]:
 
-Golden Statue Downloads : Fixed regen.
-Tsuki, The moon light : Fixed damage.
-Yellow Star T2 : Replace from Spelunker to 15%+ Mining Speed.
+Elemental Butterfly : Projectile problems.
+Elemental Fragements : Name Fixed.
+
+- - -
 
 Star Team.

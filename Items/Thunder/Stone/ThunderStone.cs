@@ -32,11 +32,11 @@ namespace AwakeningMinerals.Items.Thunder.Stone
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.StoneBlock, 10);
-            recipe.AddIngredient(ItemID.Sandstone, 5);
-            recipe.AddTile(TileID.WorkBenches);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
+			recipe.AddIngredient(ModContent.ItemType<Items.ElementalFragments.Thunder.Vrontimassinite>(), 1);
+			recipe.AddIngredient(ItemID.CopperOre, 5);
+			recipe.AddTile(TileID.Anvils);
+			recipe.SetResult(5);
+			recipe.AddRecipe();
         }
     }
 }
