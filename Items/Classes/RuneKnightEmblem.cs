@@ -6,12 +6,12 @@ using AwakeningMinerals.Items;
 
 namespace AwakeningMinerals.Items.Classes
 {
-	public class BarbarianEmblem : ModItem
+	public class RuneKnightEmblem : ModItem
 	{
 		public override void SetStaticDefaults() {
 			base.SetStaticDefaults();
-			DisplayName.SetDefault("Barbarian Emblem");
-			Tooltip.SetDefault("Melee Damage = +10%\nAttack Speed = +5%");
+			DisplayName.SetDefault("Rune Knight Emblem");
+			Tooltip.SetDefault("Magic Damage = +7%\nMelee Damage = +7%");
 		}
 
 		public override void SetDefaults() {
@@ -24,15 +24,15 @@ namespace AwakeningMinerals.Items.Classes
 
 		public override void UpdateAccessory(Player player, bool hideVisual)
 		{
-			player.meleeDamage += 0.10f;
-			player.meleeSpeed += 0.05f;
+			player.magicDamage += 0.08f;
+			player.meleeDamage += 0.08f;
 		}
 
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.WarriorEmblem, 1);
-			recipe.AddIngredient(ItemID.CopperAxe, 1);
+			recipe.AddIngredient(ModContent.ItemType<Items.Classes.EmptyDisk>(), 1);
+			recipe.AddIngredient(ItemID.SorcererEmblem, 1);
 			recipe.AddTile(TileID.TinkerersWorkbench);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

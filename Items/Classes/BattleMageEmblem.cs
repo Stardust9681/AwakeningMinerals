@@ -31,8 +31,8 @@ namespace AwakeningMinerals.Items.Classes
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
+			recipe.AddIngredient(ModContent.ItemType<Items.Classes.EmptyDisk>(), 1);
 			recipe.AddIngredient(ItemID.SorcererEmblem, 1);
-			recipe.AddIngredient(ItemID.CopperChainmail, 1);
 			recipe.AddTile(TileID.TinkerersWorkbench);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

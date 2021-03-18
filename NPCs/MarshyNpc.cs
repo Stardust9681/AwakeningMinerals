@@ -156,7 +156,13 @@ namespace AwakeningMinerals.NPCs
 			shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Pets.AstralButterfly>());
 			nextSlot++;
 			shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Pets.MoonInvader>());		
-			nextSlot++;	
+			nextSlot++;
+			//shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Pets.Eternal>());		
+			nextSlot++;
+			shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Pets.MoonInvader>());		
+			nextSlot++;
+			shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Pets.MoonInvader>());		
+			nextSlot++;
 			//shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Projects.MagicBookProject>());
 			nextSlot++;
 			//shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Projects.RangedBookProject>());

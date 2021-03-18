@@ -62,6 +62,6 @@ namespace AwakeningMinerals.Items.TreasureBag.TsukiBoss
 
         }
 
-        public override int BossBagNPC => ModContent.NPCType<NPCs.Bosses.TsukiBoss>();
+        public override int BossBagNPC => ModContent.NPCType<NPCs.Bosses.TsukiBoss.TsukiBoss>();
     }
 }

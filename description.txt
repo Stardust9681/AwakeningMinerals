@@ -1,5 +1,5 @@
 [i/p57:520][c/fec2ff:Awakening Minerals] [i/p57:520]
-[c/c2feff:v0.9]
+[c/c2feff:v0.10]
 
 The [c/b94bee:Awakening Minerals] is a simply mod for improve gaming experience.
 This mod add : Accessories, Weapons, Armor, Bosses and more, and is total grinding.
@@ -9,13 +9,17 @@ If u want know more enter in our server Discord.
 
 List stuff:
 
-Weapons : 4 Sword, 1 Spear, 3 Bow, 3 Magic
-Bosses : 1
-Town Npc : 2
-Accessories : 18 Stars, 4 Necklaces, 1 Wings
-Class : 4
-Pets : 11 Butterflies, 1 Invader
-Tools : 9 Pickaxes, 9 Axes, 8 Hammers
+22 - Weapons
+1 - Bosses
+2 - Town Npc
+23 - Accessories
+16 - Classes
+23 - Pets
+26 - Tools
+1 - Biome
+3 - Mobs (3 Animals)
+8 - Potions
+1 - Plant
 
 - - -
 [c/7b52c3:Update]:
@@ -25,21 +29,19 @@ Tools : 9 Pickaxes, 9 Axes, 8 Hammers
 - - -
 [c/7b52c3:New]:
 
-8 Elemental Fragements (Fire, Ice, Air, Thunder, Light, Water, Earth, Death).
-2 Legendary Swords.
-2 Legendary Bows.
-2 Legendary Magics.
-4 Minerals (Vex Metal, Xony Metal, Iper Metal, Zeky Metal).
-1 Pickaxe/Axe.
-1 Pet.
-1 Npc (Marhsy).
-4 Classes.
+1 Artificial Biome.
+3 Pets.
+12 Classes.
+2 Mobs.
+3 Animals.
+8 Potions.
+1 Plant.
+22 Weapons.
 
 - - -
 [c/7b52c3:Fix]:
 
-Elemental Butterfly : Projectile problems.
-Elemental Fragements : Name Fixed.
+---
 
 - - -
 

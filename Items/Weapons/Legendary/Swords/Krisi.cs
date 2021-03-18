@@ -22,8 +22,8 @@ namespace AwakeningMinerals.Items.Weapons.Legendary.Swords
         {
             item.damage = 40;
             item.melee = true;
-            item.width = 70;
-            item.height = 70;
+            item.width = 66;
+            item.height = 68;
             item.useTime = 30;
             item.useAnimation = 40;
             item.useStyle = 1;

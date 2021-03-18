@@ -156,6 +156,8 @@ namespace AwakeningMinerals.NPCs
 			shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Tools.Moon.MoonHammer>());
 			nextSlot++;
 			shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Tools.Moon.MoonPickaxe>());
+			nextSlot++;
+			shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Tools.AstralMoonSolution>());
 		}
 
 		public override void NPCLoot() {

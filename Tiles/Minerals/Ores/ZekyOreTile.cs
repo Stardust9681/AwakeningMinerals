@@ -20,7 +20,7 @@ namespace AwakeningMinerals.Tiles.Minerals.Ores
 			Main.tileBlockLight[Type] = true;
 
 			ModTranslation name = CreateMapEntryName();
-			name.SetDefault("Ice Ore");
+			name.SetDefault("Zeky Ore");
 			AddMapEntry(new Color(35, 105, 125), name);
 
 			dustType = 84;

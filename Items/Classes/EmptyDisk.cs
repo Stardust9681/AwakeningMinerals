@@ -31,7 +31,8 @@ namespace AwakeningMinerals.Items.Classes
     		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.StoneBlock, 20);
+			recipe.AddIngredient(ItemID.IronBar, 5);
+            recipe.AddIngredient(ItemID.GoldBar, 5);
 			recipe.AddTile(TileID.WorkBenches);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

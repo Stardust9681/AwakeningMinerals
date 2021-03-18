@@ -99,6 +99,12 @@ namespace AwakeningMinerals.Items.SpecialItems
 			//recipe.AddTile(TileID.Loom);
 			//recipe.SetResult(this);
 			//recipe.AddRecipe();
+
+            ModRecipe recipe = new ModRecipe(mod);
+			recipe.AddIngredient(ModContent.ItemType<Items.AMToken>(), 5);
+			recipe.AddTile(TileID.WorkBenches);
+			recipe.SetResult(this);
+			recipe.AddRecipe();
 		}
     }
 }

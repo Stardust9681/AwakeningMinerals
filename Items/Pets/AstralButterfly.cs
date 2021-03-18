@@ -1,6 +1,8 @@
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
+using Microsoft.Xna.Framework;
+using System.Collections.Generic;
 using static Terraria.ModLoader.ModContent;
 using AwakeningMinerals.Projectiles;
 using AwakeningMinerals.Buffs;
@@ -9,6 +11,18 @@ namespace AwakeningMinerals.Items.Pets
 {
     public class AstralButterfly : ModItem
     {
+        public override void ModifyTooltips(List<TooltipLine> tooltips)
+		{
+			TooltipLine line = new TooltipLine(mod, "ItemName", "AM Contents");
+			line.overrideColor = new Color(250, 200, 255);
+			tooltips.Add(line);
+			foreach (TooltipLine line2 in tooltips) {
+				if (line2.mod == "Terraria" && line2.Name == "ItemName") {
+					line2.overrideColor = new Color(Main.DiscoR, Main.DiscoG, Main.DiscoB);
+					break;
+				}
+			}
+		}
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Astral Butterfly");
