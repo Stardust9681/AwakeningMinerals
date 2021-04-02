@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 
 namespace AwakeningMinerals.Items.Armor.AirBiome
 {
-    [AutoloadEquip(EquipType.Body)]
+    [AutoloadEquip(EquipType.Legs)]
     public class AirBiomeLeggings : ModItem
     {
         public override void SetStaticDefaults()

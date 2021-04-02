@@ -7,7 +7,7 @@ using AwakeningMinerals.Buffs.Debuffs;
 namespace AwakeningMinerals.Items.Armor.AstralMoonBiome
 {
     [AutoloadEquip(EquipType.Body)]
-    public class AstralMoonArmor : ModItem
+    public class AstralMoonBiomeChestplate : ModItem
     {
         public override void SetStaticDefaults()
         {

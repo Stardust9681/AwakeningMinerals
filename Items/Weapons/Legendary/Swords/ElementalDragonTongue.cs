@@ -13,8 +13,8 @@ namespace AwakeningMinerals.Items.Weapons.Legendary.Swords
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Elemental DragonTongue");
-            Tooltip.SetDefault("Shoot 8 blades\nApply all Elementals Debuff");
+            DisplayName.SetDefault("Elemental Dragon Tongue");
+            Tooltip.SetDefault("Shoot a magic dust that follow the enemies\nApply all Elementals Debuff");
 
         }
 

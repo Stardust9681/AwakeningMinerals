@@ -15,13 +15,14 @@ namespace AwakeningMinerals.Buffs.Debuffs
 			Main.debuff[Type] = true;
 			Main.pvpBuff[Type] = true;
 			Main.buffNoTimeDisplay[Type] = false;
+			longerExpertDebuff = true;
 		}
 
         public override void Update(Player player, ref int buffIndex)
         {
             player.moveSpeed -= 0.20f;
 
-			player.buffTime[buffIndex] = 120;
+			//player.buffTime[buffIndex] = 120;
         }
 	}
 }

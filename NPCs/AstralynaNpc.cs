@@ -2,7 +2,7 @@ using System;
 using AwakeningMinerals.Dusts;
 using AwakeningMinerals.Items;
 using AwakeningMinerals.Items.Weapons;
-using AwakeningMinerals.Projectiles;
+using AwakeningMinerals.Projectiles.Weapons.Legendary.Sword.ElementalDragonTongue;
 using AwakeningMinerals.Tiles;
 using Microsoft.Xna.Framework;
 using Terraria;
@@ -105,7 +105,13 @@ namespace AwakeningMinerals.NPCs
 		{
 			switch (Main.rand.Next(4)) {
 				case 0:
-					return "Thank you for have me saved.";
+					return "Squishi Squishi, you need something?";
+				case 1:
+					return "For more info check our server Discord";
+				case 2:
+					return "Have u talk with Marshy? She is a nice scientist, and sell funny stuff, like pets, references and other more ";
+				case 3:
+					return "I am very much in love with Marshy, and yes, even though we are both women. Unfortunately the founder is a bad person because he made me female with the love for more females";
 				default:
 					return "May the blessing of the Moon be with you";
 			}
@@ -132,12 +138,12 @@ namespace AwakeningMinerals.NPCs
 		}
 		*/
 
-		public override void SetChatButtons(ref string button, ref string button2) {
-			button = Language.GetTextValue("LegacyInterface.28");
+		//public override void SetChatButtons(ref string button, ref string button2) {
+		//	button = Language.GetTextValue("LegacyInterface.28");
 			//button2 = "Awesomeify";
-			if (Main.LocalPlayer.HasItem(ItemID.HiveBackpack))
-				button = "Upgrade " + Lang.GetItemNameValue(ItemID.HiveBackpack);
-		}
+		//	if (Main.LocalPlayer.HasItem(ItemID.HiveBackpack))
+		//		button = "Upgrade " + Lang.GetItemNameValue(ItemID.HiveBackpack);
+		//}
 
 		public override void OnChatButtonClicked(bool firstButton, ref bool shop) 
 		{
@@ -150,7 +156,7 @@ namespace AwakeningMinerals.NPCs
 		public override void SetupShop(Chest shop, ref int nextSlot) 
 		{
 			shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.SummonTsuki>());
-			
+
 			nextSlot++;
 			shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Tools.Moon.MoonAxe>());
 			nextSlot++;
@@ -188,10 +194,10 @@ namespace AwakeningMinerals.NPCs
 			randExtraCooldown = 30;
 		}
 
-		//public override void TownNPCAttackProj(ref int projType, ref int attackDelay) {
-		//	projType = ModContent.ProjectileType<MoonProj>();
-		//	attackDelay = 1;
-		//}
+		public override void TownNPCAttackProj(ref int projType, ref int attackDelay) {
+			projType = ModContent.ProjectileType<ElementalDragonTongueProj3>();
+			attackDelay = 1;
+		}
 
 		public override void TownNPCAttackProjSpeed(ref float multiplier, ref float gravityCorrection, ref float randomOffset) {
 			multiplier = 12f;

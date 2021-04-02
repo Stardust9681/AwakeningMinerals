@@ -20,7 +20,7 @@ namespace AwakeningMinerals.Buffs.Debuffs
         {
             player.silence = true;
 
-			player.buffTime[buffIndex] = 120;
+			//player.buffTime[buffIndex] = 120;
         }
 	}
 }

@@ -25,7 +25,7 @@ namespace AwakeningMinerals.Buffs.Debuffs
 			player.statDefense -= 5;
 			player.allDamage -= 0.50f;
 
-			player.buffTime[buffIndex] = 300;
+			//player.buffTime[buffIndex] = 300;
         }
 	}
 }
