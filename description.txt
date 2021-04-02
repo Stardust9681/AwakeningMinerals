@@ -7,36 +7,24 @@ Don't have world generation about various biome or minerals or items it will be 
 
 If u want know more enter in our server Discord.
 
-List stuff:
+List stuff:  (For more info check the Content List in our Server Discord)
 
-22 - Weapons
-1 - Bosses
-2 - Town Npc
-23 - Accessories
-16 - Classes
-23 - Pets
-26 - Tools
-1 - Biome
-3 - Mobs (3 Animals)
-8 - Potions
-1 - Plant
+^ - 21 - Weapons
+= - 1 - Bosses
+= - 2 - Town Npc
+= - 33 - Accessories
+^ - 1 - Classes
+^ - 12 - Pets
+^ - 26 - Tools
+^ - 9 - Biome
+^ - 24 - Mobs (+36 Animals)
+^ - 8 - Potions
+^ - 1 - Plant (+8 Craftable)
 
 - - -
 [c/7b52c3:Update]:
 
-- - -
-
-- - -
-[c/7b52c3:New]:
-
-1 Artificial Biome.
-3 Pets.
-12 Classes.
-2 Mobs.
-3 Animals.
-8 Potions.
-1 Plant.
-22 Weapons.
+---
 
 - - -
 [c/7b52c3:Fix]:

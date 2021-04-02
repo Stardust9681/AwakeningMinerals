@@ -150,16 +150,20 @@ namespace AwakeningMinerals.NPCs
 		public override void SetupShop(Chest shop, ref int nextSlot) 
 		{
 			shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.SummonTsuki>());
+			
 			nextSlot++;
 			shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Tools.Moon.MoonAxe>());
 			nextSlot++;
 			shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Tools.Moon.MoonHammer>());
 			nextSlot++;
 			shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Tools.Moon.MoonPickaxe>());
+
 			nextSlot++;
 			shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Tools.AstralMoonSolution>());
+
 			nextSlot++;
 			shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Projects.LegendaryChest>());
+
 			nextSlot++;
 			shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Projects.MagicBookProject>());
 			nextSlot++;
