@@ -28,7 +28,7 @@ namespace AwakeningMinerals.Items.Tools
 		public override void AddRecipes() {
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ModContent.ItemType<AncientSeed>(), 10);
-			recipe.SetResult(this, 999);
+			recipe.SetResult(this, 80);
 			recipe.AddRecipe();
 		}
 	}

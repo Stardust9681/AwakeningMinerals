@@ -22,8 +22,8 @@ namespace AwakeningMinerals.Items.ElementalFragments.Earth
 
         public override void SetDefaults()
         {
-            item.width = 26;
-            item.height = 28;
+            item.width = 18;
+            item.height = 26;
             item.value = Item.sellPrice(silver: 20);
             item.rare = ItemRarityID.Lime;
             item.maxStack = 99;

@@ -22,8 +22,8 @@ namespace AwakeningMinerals.Items.ElementalFragments.Fire
 
         public override void SetDefaults()
         {
-            item.width = 34;
-            item.height = 54;
+            item.width = 50;
+            item.height = 50;
             item.value = Item.sellPrice(silver: 60);
             item.rare = ItemRarityID.Red;
             item.maxStack = 99;

@@ -54,6 +54,14 @@ namespace AwakeningMinerals
 
 		//Debuffs
 		public bool AirDebuff = false;
+		public bool DeathDebuff = false;
+		public bool EarthDebuff = false;
+		public bool FireDebuff = false;
+		public bool IceDebuff = false;
+		public bool LightDebuff = false;
+		public bool ThunderDebuff = false;
+		public bool MoonDebuff = false;
+		public bool WaterDebuff = false;
 
 		//Zones
 		public bool ZoneAstralMoon;
@@ -66,6 +74,8 @@ namespace AwakeningMinerals
 		public bool ZoneLightBiome;
 		public bool ZoneThunderBiome;
 
+		//Shield
+		public bool BarbarianShield;
 
 
 		public static bool hasProjectile;
@@ -102,6 +112,14 @@ namespace AwakeningMinerals
 
 			//Debuffs
 			AirDebuff = false;
+			DeathDebuff = false;
+			EarthDebuff = false;
+			IceDebuff = false;
+			LightDebuff = false;
+			ThunderDebuff = false;
+			WaterDebuff = false;
+			FireDebuff = false;
+			MoonDebuff = false;
         }
 		public static int[] iceWidth = new int[3];
 		public static int[] iceHeight = new int[3];

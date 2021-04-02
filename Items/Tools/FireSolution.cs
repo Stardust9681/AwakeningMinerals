@@ -9,7 +9,7 @@ namespace AwakeningMinerals.Items.Tools
 	public class FireSolution : ModItem
 	{
 		public override void SetStaticDefaults() {
-			DisplayName.SetDefault("Monochromatic Solution");
+			DisplayName.SetDefault("Hot Solution");
 			Tooltip.SetDefault("Used by the Clentaminator"
 				+ "\nSpreads the Fire Biome");
 		}
@@ -24,11 +24,11 @@ namespace AwakeningMinerals.Items.Tools
 			item.maxStack = 999;
 			item.consumable = true;
 		}
-
-		public override void AddRecipes() {
+		public override void AddRecipes()
+		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ModContent.ItemType<FireSeed>(), 10);
-			recipe.SetResult(this, 999);
+			recipe.SetResult(this, 80);
 			recipe.AddRecipe();
 		}
 	}

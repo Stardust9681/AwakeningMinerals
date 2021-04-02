@@ -22,8 +22,8 @@ namespace AwakeningMinerals.Items.ElementalFragments.Air
 
         public override void SetDefaults()
         {
-            item.width = 34;
-            item.height = 54;
+            item.width = 50;
+            item.height = 50;
             item.value = Item.sellPrice(silver: 60);
             item.rare = ItemRarityID.White;
             item.maxStack = 99;

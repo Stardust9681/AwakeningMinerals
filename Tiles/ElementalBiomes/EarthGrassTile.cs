@@ -30,7 +30,7 @@ namespace AwakeningMinerals.Tiles.ElementalBiomes
 
 		public override int SaplingGrowthType(ref int style) {
 			style = 0;
-			return ModContent.TileType<AstralMoonSaplingTile>();
+			return ModContent.TileType<EarthSaplingTile>();
 		}
 	}
 }

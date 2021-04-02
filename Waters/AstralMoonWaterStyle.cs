@@ -38,7 +38,7 @@ namespace AwakeningMinerals.Waters
 
 		public override Color BiomeHairColor()
 		{
-			return Color.Blue;
+			return Color.MediumPurple;
 		}
 	}
 }

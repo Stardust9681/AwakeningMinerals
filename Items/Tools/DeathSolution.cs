@@ -9,7 +9,7 @@ namespace AwakeningMinerals.Items.Tools
 	public class DeathSolution : ModItem
 	{
 		public override void SetStaticDefaults() {
-			DisplayName.SetDefault("Monochromatic Solution");
+			DisplayName.SetDefault("Dark Solution");
 			Tooltip.SetDefault("Used by the Clentaminator"
 				+ "\nSpreads the Death Biome");
 		}
@@ -28,7 +28,7 @@ namespace AwakeningMinerals.Items.Tools
 		public override void AddRecipes() {
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ModContent.ItemType<DeathSeed>(), 10);
-			recipe.SetResult(this, 999);
+			recipe.SetResult(this, 80);
 			recipe.AddRecipe();
 		}
 	}

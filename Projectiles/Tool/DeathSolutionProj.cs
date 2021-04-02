@@ -91,12 +91,6 @@ namespace AwakeningMinerals.Projectiles.Tool
 							WorldGen.SquareTileFrame(k, l, true);
 							NetMessage.SendTileSquare(-1, k, l, 1);
 						}
-												//If the tile is sand, convert to ExampleSand
-						else if (TileID.Sets.Conversion.Sand[type]) {
-							Main.tile[k, l].type = (ushort)ModContent.TileType<DeathSandTile>();
-							WorldGen.SquareTileFrame(k, l, true);
-							NetMessage.SendTileSquare(-1, k, l, 1);
-						}
 					}
 				}
 			}

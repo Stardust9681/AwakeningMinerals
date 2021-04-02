@@ -990,23 +990,23 @@ namespace AwakeningMinerals.NPCs
             //Boss
             if (npc.type == NPCID.SkeletronPrime)
             {
-                Item.NewItem(npc.getRect(), ModContent.ItemType<Items.ItemTek.Boss.MetalPlate>(), Main.rand.Next(1, 30));
-                Item.NewItem(npc.getRect(), ModContent.ItemType<Items.ItemTek.Boss.MechanicalCore>(), Main.rand.Next(1, 20));
+                Item.NewItem(npc.getRect(), ModContent.ItemType<Items.ItemTek.Boss.MetalPlate>(), Main.rand.Next(5, 30));
+                Item.NewItem(npc.getRect(), ModContent.ItemType<Items.ItemTek.Boss.MechanicalCore>(), Main.rand.Next(5, 20));
             }
             if (npc.type == NPCID.TheDestroyer)
             {
-                Item.NewItem(npc.getRect(), ModContent.ItemType<Items.ItemTek.Boss.MetalPlate>(), Main.rand.Next(1, 30));
-                Item.NewItem(npc.getRect(), ModContent.ItemType<Items.ItemTek.Boss.MechanicalCore>(), Main.rand.Next(1, 20));
+                Item.NewItem(npc.getRect(), ModContent.ItemType<Items.ItemTek.Boss.MetalPlate>(), Main.rand.Next(5, 30));
+                Item.NewItem(npc.getRect(), ModContent.ItemType<Items.ItemTek.Boss.MechanicalCore>(), Main.rand.Next(5, 20));
             }
             if (npc.type == NPCID.Retinazer)
             {
-                Item.NewItem(npc.getRect(), ModContent.ItemType<Items.ItemTek.Boss.MetalPlate>(), Main.rand.Next(1, 30));
-                Item.NewItem(npc.getRect(), ModContent.ItemType<Items.ItemTek.Boss.MechanicalCore>(), Main.rand.Next(1, 20));
+                Item.NewItem(npc.getRect(), ModContent.ItemType<Items.ItemTek.Boss.MetalPlate>(), Main.rand.Next(5, 30));
+                Item.NewItem(npc.getRect(), ModContent.ItemType<Items.ItemTek.Boss.MechanicalCore>(), Main.rand.Next(5, 20));
             }
             if (npc.type == NPCID.Spazmatism)
             {
-                Item.NewItem(npc.getRect(), ModContent.ItemType<Items.ItemTek.Boss.MetalPlate>(), Main.rand.Next(1, 30));
-                Item.NewItem(npc.getRect(), ModContent.ItemType<Items.ItemTek.Boss.MechanicalCore>(), Main.rand.Next(1, 20));
+                Item.NewItem(npc.getRect(), ModContent.ItemType<Items.ItemTek.Boss.MetalPlate>(), Main.rand.Next(5, 30));
+                Item.NewItem(npc.getRect(), ModContent.ItemType<Items.ItemTek.Boss.MechanicalCore>(), Main.rand.Next(5, 20));
             }
         }
     }

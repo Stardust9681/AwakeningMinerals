@@ -8,6 +8,8 @@ using Terraria.ModLoader;
 using AwakeningMinerals.Projectiles.Weapons.Legendary.Hammer;
 using static Terraria.ModLoader.ModContent;
 
+using AwakeningMinerals.Items.Projects;
+
 namespace AwakeningMinerals.Items.Weapons.Legendary.Hammer
 {
     public class Titan : ModItem
@@ -37,6 +39,14 @@ namespace AwakeningMinerals.Items.Weapons.Legendary.Hammer
 
 			item.shoot = ModContent.ProjectileType<TitanProj>();
 			item.shootSpeed = 3f;
+        }
+
+        public override void AddRecipes()
+        {
+            ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ModContent.ItemType<MeleeBookProject>(), 1);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
         }
     }
 }

@@ -22,7 +22,7 @@ namespace AwakeningMinerals.Items.ElementalFragments.Death
 
         public override void SetDefaults()
         {
-            item.width = 30;
+            item.width = 38;
             item.height = 38;
             item.value = Item.sellPrice(silver: 40);
             item.rare = ItemRarityID.Purple;

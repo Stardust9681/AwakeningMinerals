@@ -38,14 +38,6 @@ namespace AwakeningMinerals.Items.Weapons.Legendary.Swords
 			item.shootSpeed = 4f;
             item.shoot = mod.ProjectileType("ElementalDragonTongueProj");
         }
-        public override void MeleeEffects(Player player, Rectangle hitbox)
-        {
-            if (Main.rand.NextBool(3))
-            {
-                //Emit dusts when swing the sword
-                Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, ModContent.DustType<Dusts.ElementalMurasamaDust>());
-            }
-        }
         public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
 		{
 			Vector2 origVect = new Vector2(speedX, speedY);

@@ -26,7 +26,7 @@ namespace AwakeningMinerals.Items.Projects
             item.height = 30;
             item.value = Item.sellPrice(silver: 75);
             item.rare = ItemRarityID.Pink;
-            item.maxStack = 999;
+            item.maxStack = 99;
         }
     }
 }

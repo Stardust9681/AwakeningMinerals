@@ -7,6 +7,8 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
+using AwakeningMinerals.Items.Projects;
+
 namespace AwakeningMinerals.Items.Weapons.Legendary.Spear
 {
     public class Valkyre : ModItem
@@ -37,6 +39,14 @@ namespace AwakeningMinerals.Items.Weapons.Legendary.Spear
             item.shoot = mod.ProjectileType("ValkyreProj");
             item.shootSpeed = 5f;
             item.crit = 25;
+        }
+
+        public override void AddRecipes()
+        {
+            ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ModContent.ItemType<MeleeBookProject>(), 1);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
         }
     }
 }

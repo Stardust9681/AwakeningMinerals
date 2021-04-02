@@ -4,6 +4,8 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using AwakeningMinerals.Projectiles.Weapons.Legendary.Magic;
 
+using AwakeningMinerals.Items.Projects;
+
 namespace AwakeningMinerals.Items.Weapons.Legendary.Magic
 {
 	public class NatureStaff : ModItem
@@ -47,6 +49,13 @@ namespace AwakeningMinerals.Items.Weapons.Legendary.Magic
 			}
 			return false;
 		}
+		public override void AddRecipes()
+        {
+            ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ModContent.ItemType<MagicBookProject>(), 1);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+        }
 
 	}
 }

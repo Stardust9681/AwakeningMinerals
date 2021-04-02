@@ -39,27 +39,15 @@ namespace AwakeningMinerals.Items.Projects
             int choice = Main.rand.Next(6);
             if (choice == 0)
             {
-                player.QuickSpawnItem(ModContent.ItemType<Items.Projects.SwordsBag.KrisiBag>());
+                player.QuickSpawnItem(ModContent.ItemType<Items.Projects.MeleeBag>());
             }
             if (choice == 1)
             {
-                player.QuickSpawnItem(ModContent.ItemType<Items.Projects.SwordsBag.TimoriaBag>());
+                player.QuickSpawnItem(ModContent.ItemType<Items.Projects.RangedBag>());
             }
             if (choice == 2)
             {
-                player.QuickSpawnItem(ModContent.ItemType<Items.Projects.BowBag.ElementalistBag>());
-            }
-            if (choice == 3)
-            {
-                player.QuickSpawnItem(ModContent.ItemType<Items.Projects.BowBag.FrostSpikeBag>());
-            }
-            if (choice == 4)
-            {
-                player.QuickSpawnItem(ModContent.ItemType<Items.Projects.MagicBag.NatureStaffBag>());
-            }
-            if (choice == 5)
-            {
-                player.QuickSpawnItem(ModContent.ItemType<Items.Projects.MagicBag.RedLanternBag>());
+                player.QuickSpawnItem(ModContent.ItemType<Items.Projects.MagicBag>());
             }
         }
     }

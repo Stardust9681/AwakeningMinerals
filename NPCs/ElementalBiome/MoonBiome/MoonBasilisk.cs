@@ -1,12 +1,11 @@
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using AwakeningMinerals.Dusts;
+
+using AwakeningMinerals.Buffs.Debuffs;
 
 namespace AwakeningMinerals.NPCs.ElementalBiome.MoonBiome
 {
@@ -44,7 +43,7 @@ namespace AwakeningMinerals.NPCs.ElementalBiome.MoonBiome
 		{
 			for (int i = 0; i < 10; i++)
 			{
-				int dustType = mod.DustType("AstralMoonDust");
+				int dustType = mod.DustType("MoonDust");
 				int dustIndex = Dust.NewDust(npc.position, npc.width, npc.height, dustType);
 				Dust dust = Main.dust[dustIndex];
 				dust.velocity.X = dust.velocity.X + Main.rand.Next(-50, 51) * 0.01f;
@@ -52,18 +51,16 @@ namespace AwakeningMinerals.NPCs.ElementalBiome.MoonBiome
 				dust.scale *= 1f + Main.rand.Next(-30, 31) * 0.01f;
 			}
 		}
-
 		public override void NPCLoot()
 		{
-
+			Item.NewItem(npc.getRect(), ModContent.ItemType<Items.AstralMoon.AstralMoonStone>(), Main.rand.Next(1, 6));
 		}
 
-		//public override void OnHitPlayer(Player player, int damage, bool crit)
-		//{
-		//	if (Main.rand.NextBool(3))
-		//	{
-		//		player.AddBuff(mod.BuffType("CelestialDebuff"), 120, true);
-		//	}
-		//}
+		public override void OnHitPlayer(Player target, int damage, bool crit)
+		{
+			if (Main.rand.Next(3) == 0) {
+				target.AddBuff(ModContent.BuffType<MoonDebuff>(), 180);
+			}
+		}
 	}
 }

@@ -7,6 +7,8 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
+using AwakeningMinerals.Items.Projects;
+
 namespace AwakeningMinerals.Items.Weapons.Legendary.Swords
 {
     public class Krisi : ModItem
@@ -34,6 +36,14 @@ namespace AwakeningMinerals.Items.Weapons.Legendary.Swords
             item.autoReuse = true;
             item.useTurn = true;
             item.crit = 25;
+        }
+
+        public override void AddRecipes()
+        {
+            ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ModContent.ItemType<MeleeBookProject>(), 1);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
         }
     }
 }

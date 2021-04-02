@@ -9,7 +9,7 @@ namespace AwakeningMinerals.Items.Tools
 	public class LightSolution : ModItem
 	{
 		public override void SetStaticDefaults() {
-			DisplayName.SetDefault("Monochromatic Solution");
+			DisplayName.SetDefault("Holy Solution");
 			Tooltip.SetDefault("Used by the Clentaminator"
 				+ "\nSpreads the Light Biome");
 		}
@@ -28,7 +28,7 @@ namespace AwakeningMinerals.Items.Tools
 		public override void AddRecipes() {
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ModContent.ItemType<LightSeed>(), 10);
-			recipe.SetResult(this, 999);
+			recipe.SetResult(this, 80);
 			recipe.AddRecipe();
 		}
 	}

@@ -103,39 +103,30 @@ namespace AwakeningMinerals
 		public override void TileCountsAvailable(int[] tileCounts) {
 			// Here we count various tiles towards ZoneExample
 			AstralMoonTiles = tileCounts[ModContent.TileType<AstralMoonGrassTile>()] + 
-			tileCounts[ModContent.TileType<AstralMoonSandTile>()] +
 			tileCounts[ModContent.TileType<AstralMoonDirtTile>()];
 
 			IceBiomeTiles = tileCounts[ModContent.TileType<IceGrassTile>()] + 
-			tileCounts[ModContent.TileType<IceSandTile>()] +
 			tileCounts[ModContent.TileType<IceDirtTile>()];
 
 			FireBiomeTiles = tileCounts[ModContent.TileType<FireGrassTile>()] + 
-			tileCounts[ModContent.TileType<FireSandTile>()] +
 			tileCounts[ModContent.TileType<FireDirtTile>()];
 
 			DeathBiomeTiles = tileCounts[ModContent.TileType<DeathGrassTile>()] + 
-			tileCounts[ModContent.TileType<DeathSandTile>()] +
 			tileCounts[ModContent.TileType<DeathDirtTile>()];
 
 			EarthBiomeTiles = tileCounts[ModContent.TileType<EarthGrassTile>()] + 
-			tileCounts[ModContent.TileType<EarthSandTile>()] +
 			tileCounts[ModContent.TileType<EarthDirtTile>()];
 
 			LightBiomeTiles = tileCounts[ModContent.TileType<LightGrassTile>()] + 
-			tileCounts[ModContent.TileType<LightSandTile>()] +
 			tileCounts[ModContent.TileType<LightDirtTile>()];
 
 			ThunderBiomeTiles = tileCounts[ModContent.TileType<ThunderGrassTile>()] + 
-			tileCounts[ModContent.TileType<ThunderSandTile>()] +
 			tileCounts[ModContent.TileType<ThunderDirtTile>()];
 
 			WaterBiomeTiles = tileCounts[ModContent.TileType<WaterGrassTile>()] + 
-			tileCounts[ModContent.TileType<WaterSandTile>()] +
 			tileCounts[ModContent.TileType<WaterDirtTile>()];
 
 			AirBiomeTiles = tileCounts[ModContent.TileType<AirGrassTile>()] + 
-			tileCounts[ModContent.TileType<AirSandTile>()] +
 			tileCounts[ModContent.TileType<AirDirtTile>()];
 		}
 	}

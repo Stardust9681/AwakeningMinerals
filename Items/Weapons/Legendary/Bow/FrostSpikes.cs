@@ -9,6 +9,8 @@ using Terraria.ID;
 using Terraria;
 using static Terraria.ModLoader.ModContent;
 
+using AwakeningMinerals.Items.Projects;
+
 namespace AwakeningMinerals.Items.Weapons.Legendary.Bow
 {
 
@@ -41,6 +43,14 @@ namespace AwakeningMinerals.Items.Weapons.Legendary.Bow
             item.shoot = 1;
             item.shootSpeed = 12f;
             item.crit = 25;
+        }
+
+        public override void AddRecipes()
+        {
+            ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ModContent.ItemType<RangedBookProject>(), 1);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
         }
     }
 }

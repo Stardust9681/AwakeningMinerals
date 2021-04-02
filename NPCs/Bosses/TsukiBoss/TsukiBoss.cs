@@ -167,8 +167,9 @@ namespace AwakeningMinerals.NPCs.Bosses.TsukiBoss
         private const int Sphere = 50;
 
         public override bool PreDraw(SpriteBatch spriteBatch, Color drawColor)
-
         {
+            GlowmaskUtils.DrawNPCGlowMask(spriteBatch, npc, mod.GetTexture("NPCs/Bosses/TsukiBoss/TsukiBoss_Glow"));
+
             if (npc.life <= 1750)
             {
                 npc.ai[0]++;
